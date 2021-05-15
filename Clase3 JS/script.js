@@ -1,6 +1,7 @@
-let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-let diasMes = ['31', '28', '31', '30','31','30','31','31','30','31','30','31']
+let tabla = parseInt (prompt("Ingrese número para aprender tabla de multiplicación"))
+let cantidadNumeros = parseInt (prompt("Ingrese hasta que número quiere saber la multiplicación"))
 
-
-for (let i= 0; i < meses.length; i++){
-    console.log ('el mes de '+meses[i]+ ' tiene '+diasMes[i]+ ' cantidad de días') }
+for (let i=0; i<=cantidadNumeros; i++){
+    multiplicacion = [i]*tabla
+    console.log ("El valor de "+tabla+" X "+ [i]+" es igual a "+multiplicacion)
+}
